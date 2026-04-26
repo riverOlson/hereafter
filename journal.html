@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Hereafter</title>
+        <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="css/journal.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://use.typekit.net/yri4vvc.css">
+        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js" ></script>
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    </head>
+
+    <div class="mainMenu darkBrownBG">
+
+        <a class ="journalMenuLink mobileLink flexParent" href ="journal.html"> 
+            <div class="mobileDiamond transBrownBG"></div>
+            <p class="transBrown QuiverleafDemi">journal</p> 
+        </a>
+
+        <a class ="printingMenuLink mobileLink flexParent" href ="shop.html"> 
+            <div class="mobileDiamond creamBG"></div>
+            <p class="cream QuiverleafDemi">printing</p> 
+        </a>
+
+        <div class ="userIntro mobileLink flexParent"> 
+            <div class="mobileDiamond creamBG"></div>
+            <p class="cream QuiverleafDemi">john doe</p> 
+        </div>
+
+        <div class="userInfo">
+            <p class="cream ArticulatLight">view profile</p> 
+            <p class="cream ArticulatLight">invite contributor</p> 
+            <p class="cream ArticulatBold">log out</p> 
+        </div>
+
+    </div>
+
+    <div class="navBar darkBrownBG">
+        <div class="container flexParent">
+            <a class="homeLogo" href="index.html">
+                <div class="fauxHoverLogo"></div>
+            </a>
+            
+
+            <div class="revealButton flexParent">
+
+                <a class="mobileExpander" href="#">
+                    <div class="mobileHover"></div>
+                </a>
+                
+            </div>
+
+            <a class ="desktopLink journalDeskLink flexParent" href ="journal.html"> 
+                
+                <div class="deskDiamond transBrownBG"></div>
+
+                <p class="transBrown QuiverleafDemi">journal</p> 
+            </a>
+
+            <a class ="desktopLink shopDeskLink flexParent" href ="shop.html"> 
+                
+                <div class="deskDiamond creamBG"></div>
+
+                <p class="cream QuiverleafDemi">printing</p> 
+            </a>
+
+            <a class="deskMenuToggle" href="#">
+                
+                <div class="deskDiamond creamBG"></div>
+
+            </a>
+
+            
+        </div>
+
+    </div>
+
+
+
+    
+    <body class="creamBG">
+
+
+        
+
+
+
+
+
+
+
+
+        <div class="hero darkBrownBG" id="hero">
+
+            <div class="container">
+
+                <div class="flexParent">
+                    <h1 class="cream QuiverleafThick heroTitle" id="heroTitle">welcome, John Doe!</h1>
+                    <div class="smallSpark recordSpark"></div>
+
+                </div>
+
+                <h3 class="heroSubHead cream ArticulatLight">your memories</h3>
+
+                <p class="cream ArticulatLight heroDescrip">Here you can view your previously journaled memories and add more to the timeline. Once you reach enough recorded memories to get them printed, the site will prompt you to do so.</p>
+
+                <a class="addButton heroButton creamBG toNew" href="#"></a>
+            </div>
+
+            <div class="heroExit darkBrownBG"></div>
+        </div>
+
+
+        
+
+        <section class="prompter container">
+             <div class="flexParent">
+                    <h2 class= "QuiverleafBold darkBrown"> today’s prompt</h2>
+
+                    <div class="smallSpark recordSpark darkerSpark"></div>
+            </div>
+
+            <p class="darkBrown ArticulatLight">Childhood is a time full of many random and chaotic memories, some of which will shape who the child is as a person for the rest of their life. Try to recall a time that the person you are journaling about started a new hobby in their childhood that persisted for a long time.</p>
+        </section>
+
+
+
+
+        <section class="container newEntry" id="newEntry">
+
+            <div class="flexParent">
+                    <h2 class= "QuiverleafBold darkBrown"> add a new entry</h2>
+
+                    <div class="smallSpark recordSpark darkerSpark"></div>
+            </div>
+
+            <div class="flexParent">
+
+                <div class="entryCol1">
+
+                    <a class="flexParent linkBlock dating datePar" href="#">
+                        
+                        <div class="calImg">
+                            <div class="calImg calHov"></div>
+                        </div>
+
+                        <h3 class="calDateDisplay ArticulatLight darkBrown" id="calDater">XX/XX/XXXX</h3>
+
+                    </a>
+
+                    <div class="fauxImgPreview medBrownBG"></div>
+
+                    <a class="upButton uploadFaker darkBrownBG" href="#" id="imgCreator"></a>
+                    
+                </div>
+
+                <div class="entryCol2">
+
+                    <a class="fauxTextInput medBrownBG cream" href="#">
+                        
+                        <p class="cream ArticulatLight journalling" id="journalling">enter your memory of this day here...</p>
+
+                    </a>
+
+                    <a class='linkBlock submitterButton darkBrownBG creator' href="#" id="creator"></a>
+                    
+                </div>
+                
+            </div>
+
+            <p class="disclaimerText failWarning darkBrown ArticulatLight hidden">You need an associated date, image, and text for your entry in order to record it.</p>
+            
+        </section>
+
+
+
+
+
+
+        <section class="timelineImgHolder" id="timelineSec">
+
+            <div class="originatorBurst creamBG"></div>
+
+
+            <div class="container">
+
+                <div class="deskFlex">
+
+                    <div class="story story1 desk1" id="story1">
+                        
+                        <div class="storyTextCol mobileStoryL">
+
+                            <h3 class="darkBrown ArticulatLight">4/19/2001</h3>
+
+                            <p class="darkBrown ArticulatLight">Baby Gabriel entered the world a small bundle of joy...</p>
+                            
+                        </div>
+
+                        <div class="imgDisplayer darkBrownBG"></div>
+
+                    </div>
+
+                    <div class="story story2 desk2" id="story2">
+                        
+                        <div class="storyTextCol mobileStoryR">
+
+                            <h3 class="darkBrown ArticulatLight">4/30/2005</h3>
+
+                            <p class="darkBrown ArticulatLight">On of the first times Gabe showed an interest in sports...</p>
+                            
+                        </div>
+
+                        <div class="imgDisplayer darkBrownBG"></div>
+
+                    </div>
+
+                    <div class="story story3 desk3" id="story3">
+                        
+                        <div class="storyTextCol mobileStoryL">
+
+                            <h3 class="darkBrown ArticulatLight">5/20/2005</h3>
+
+                            <p class="darkBrown ArticulatLight">When Gabe was little, he used to love following his dad...</p>
+                            
+                        </div>
+
+                        <div class="imgDisplayer darkBrownBG"></div>
+
+                    </div>
+                    
+                </div>
+
+
+
+                <div class="deskFlex deskFlexR">
+
+                    <div class="story story4 desk3 deskRight" id="story4">
+                        
+                        <div class="storyTextCol mobileStoryR">
+
+                            <h3 class="darkBrown ArticulatLight" id="dateDateD">7/20/2015</h3>
+
+                            <p class="darkBrown ArticulatLight" id="dateTextD">Not sure of the exact date, but we found this cute pic of...</p>
+                            
+                        </div>
+
+                        <div class="imgDisplayer darkBrownBG"></div>
+
+                    </div>
+
+                    <div class="story story5 desk2 deskRight" id="story5">
+                        
+                        <div class="storyTextCol mobileStoryL">
+
+                            <h3 class="darkBrown ArticulatLight">9/12/2016</h3>
+
+                            <p class="darkBrown ArticulatLight">Gabe was starting to think about college and...</p>
+                            
+                        </div>
+
+                        <div class="imgDisplayer darkBrownBG"></div>
+
+                    </div>
+
+                    <div class="story story6 desk1 deskRight" id="story6">
+                        
+                        <div class="storyTextCol mobileStoryR">
+
+                            <h3 class="darkBrown ArticulatLight" id="dateDateM">5/18/2017</h3>
+
+                            <p class="darkBrown ArticulatLight" id="dateTextM">My and Gabriel's first date. The weather was perfect and it...</p>
+                            
+                        </div>
+
+                        <div class="imgDisplayer darkBrownBG"></div>
+
+                    </div>
+                    
+                </div>
+
+
+                <div class="deskFlex">
+
+                    <div class="story story7 desk1" id="story7">
+                        
+                        <div class="storyTextCol mobileStoryL">
+
+                            <h3 class="darkBrown ArticulatLight">9/5/2017</h3>
+
+                            <p class="darkBrown ArticulatLight">The last trip Gabe agreed to go on with us. As his parents, we...</p>
+                            
+                        </div>
+
+                        <div class="imgDisplayer darkBrownBG"></div>
+
+                    </div>
+
+                    <div class="story story8 desk2" id="story8">
+                        
+                        <div class="storyTextCol mobileStoryR">
+
+                            <h3 class="darkBrown ArticulatLight">12/28/2018</h3>
+
+                            <p class="darkBrown ArticulatLight">The big game that got Gabe his scholarship! We are proud he...</p>
+                            
+                        </div>
+
+                        <div class="imgDisplayer darkBrownBG"></div>
+
+                    </div>
+
+                    <div class="story story9 desk3" id="story9">
+                        
+                        <div class="storyTextCol mobileStoryL">
+
+                            <h3 class="darkBrown ArticulatLight">5/20/2022</h3>
+
+                            <p class="darkBrown ArticulatLight">Gabe (just barely) managed to get a degree (despite always...</p>
+                            
+                        </div>
+
+                        <div class="imgDisplayer darkBrownBG"></div>
+
+                    </div>
+                    
+                </div>
+
+
+                <div class="deskFlex deskFlexR">
+
+                    <div class="story story10 desk3 deskRight hidden" id="story10">
+                        
+                        <div class="storyTextCol mobileStoryR">
+
+                            <h3 class="darkBrown ArticulatLight" id="bachPartyDateM">5/31/2022</h3>
+
+                            <p class="darkBrown ArticulatLight" id="bachPartyDescripM">Gabe and the boys hanging out before...</p>
+                            
+                        </div>
+
+                        <div class="imgDisplayer darkBrownBG"></div>
+
+                    </div>
+
+                    <div class="story story11 desk2 deskRight hidden" id="story11">
+                        
+                        <div class="storyTextCol mobileStoryL">
+
+                            <h3 class="darkBrown ArticulatLight">6/24/2022</h3>
+
+                            <p class="darkBrown ArticulatLight">Gabe and Arianna got married...</p>
+                            
+                        </div>
+
+                        <div class="imgDisplayer darkBrownBG"></div>
+
+                    </div>
+
+                    <div class="story story12 desk1 deskRight hidden" id="story12">
+                        
+                        <div class="storyTextCol mobileStoryR">
+
+                            <h3 class="darkBrown ArticulatLight" id="bachPartyDateD">7/15/2023</h3>
+
+                            <p class="darkBrown ArticulatLight" id="bachPartyDescripD">Gabe (behind the camera) at a picnic with his friends...</p>
+                            
+                        </div>
+
+                        <div class="imgDisplayer darkBrownBG"></div>
+
+                    </div>
+                    
+                </div>
+
+
+
+
+
+
+
+
+
+                
+            </div>
+            
+        </section>
+
+
+
+
+
+    
+        <section class="collaboration container" id="collaborator">
+            <div class="fauxFormContainment darkBrownBG">
+
+                 <form class="fakeForm">
+                
+                    <h2 class="cream QuiverleafBold">add a collaborator</h2>
+
+                    <div class="flexParent">
+
+                        <input type="text" value="first name" id="firstN" name="firstN" class="form3Input textInputter darkBrown creamBG ArticulatLight fauxInput">
+
+                        <input type="text" value="last name" id="lastN" name="lastN" class="form3Input textInputter darkBrown creamBG ArticulatLight fauxInput lastNamer">
+
+                    </div>
+
+                    <input type="text" value="email" id="email" name="emailCollab" class="form3Input textInputter darkBrown creamBG ArticulatLight fauxInput fauxMail">
+
+                    <a class="creamBG upButton fauxSubmitter" href="#"></a>
+
+                </form>
+
+            </div>
+
+            <p class="disclaimerText emailNotif darkBrown ArticulatLight hidden">An email has been sent to them. They should be able to help add more memories to the journal soon.</p>
+        </section>
+
+
+
+
+        <section class="burstParent" id="toStore">
+
+            <div class="container">
+           
+                <div class="burstCenter creamBG">
+                    <h2 class="darkBrown QuiverleafBold">bring it home</h2>
+                    <p class="darkBrown ArticulatLight">a permanent reminder</p>
+                </div> 
+                
+
+                <p class="darkBrown ArticulatLight burstDescrip">If you believe that you have collected all of the memories you want to record, then you can proceed to getting them all printed. Make sure to review them all first to ensure that they've all been set up exactly the way you want them first.</p>
+
+                <a class="burstButton cream darkBrownBG linkBlock" href="shop.html">
+                    <h3 class="cream ArticulatLight">go now</h3>
+                </a>
+
+            </div>
+
+            <div class="burst"></div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="footer darkBrownBG">
+
+            <div class="footerTextHolder container">
+                
+                <div class="flexParent">
+                    <h2 class= "QuiverleafBold cream"> about us</h2>
+
+                    <div class="smallSpark recordSpark"></div>
+                </div>
+
+                <div class="flexParent">
+
+                    <div class="footerCol footerCol1">
+                        
+                        <a class="cream ArticulatBold" href="https://olsond8317.myportfolio.com/">contact us</a>
+
+                        <a class="cream ArticulatBold" href="journal.html">journal</a>
+
+                        <a class="cream ArticulatBold" href="shop.html">printing</a>
+
+                        <a class="cream ArticulatBold" href="#">your account</a>
+
+                    </div>
+
+                    <div class="footerCol footerCol2">
+                        
+                        <a class="cream ArticulatBold" href="journal.html#collaborator"> share</a>
+
+                        <a class="cream ArticulatBold" href="https://en.wikipedia.org/wiki/HTTP_cookie">cookies</a>
+
+                        <a class="cream ArticulatBold" href="https://termly.io/resources/articles/what-is-a-privacy-center/">privacy</a>
+
+                        <a class="cream ArticulatBold" href="https://en.wikipedia.org/wiki/Terms_of_service">terms of service</a>
+
+                    </div>
+
+                </div>
+
+
+                <a class="upButton creamBG footerButton" href="#"></a>
+
+
+            </div>
+
+            <div class="burst footerBurst"></div>
+
+
+            
+        </section>
+
+
+
+
+        <script type="text/javascript" src="js/custom_behaviors.js"></script>
+    </body>
+</html>
