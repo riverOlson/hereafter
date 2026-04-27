@@ -1,0 +1,819 @@
+body{
+	overflow-x: hidden;
+	-webkit-overflow-x: hidden; 
+    -moz-overflow-x: hidden;  
+
+	max-width: 100vw;
+	width: 100vw;
+	position: relative;
+}
+
+.scroller{
+    max-width: 100vw;
+	width: 100vw;
+	overflow-x: hidden;
+	-webkit-overflow-x: hidden; 
+    -moz-overflow-x: hidden; 
+}
+
+a{
+	text-decoration: none;
+}
+
+.linkBlock{
+	display: block;
+}
+
+.container{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.flexParent{
+	display: flex;
+}
+
+.flipped{
+	transform: scaleX(-1);
+}
+
+.hidden, .footerBurst{
+	display: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+
+
+
+.darkBrown{
+	color: #513c3c;
+}
+
+.darkBrownBG{
+	background-color: #513c3c;
+}
+
+.medBrown{
+	color: #655357;
+}
+
+.medBrownBG{
+	background-color: #655357;
+}
+
+.transBrown{
+	color: #8a7a74;
+}
+
+.transBrownBG{
+	background-color: #8a7a74;
+}
+
+.darkOrange{
+	color: #ee974b;
+}
+
+.darkOrangeBG{
+	background-color: #ee974b;
+}
+
+.medOrange{
+	color: #edb648;
+}
+
+.medOrangeBG{
+	background-color: #edb648;
+}
+
+.cream{
+	color: #faf0ca;
+}
+
+.creamBG{
+	background-color: #faf0ca;
+}
+
+
+
+
+.heroButton, .footerButton{
+	transition: background-color 1.5s;
+}
+
+.heroButton:hover, .footerButton:hover{
+	background-color: #fff;
+	transition: background-color .5s;
+}
+
+.footerCol a:hover{
+	color: #fff;
+	transition: color .75s;
+}
+
+.footerCol a{
+	transition: color 1.5s;
+}
+
+
+
+
+.QuiverleafReg{
+	font-family: "quiverleaf-cf", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.QuiverleafItalic{
+	font-family: "quiverleaf-cf", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.QuiverleafDemi{
+	font-family: "quiverleaf-cf", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.QuiverleafDemiItalic{
+	font-family: "quiverleaf-cf", sans-serif;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.QuiverleafBold{
+	font-family: "quiverleaf-cf", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.QuiverleafBoldItalic{
+	font-family: "quiverleaf-cf", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.QuiverleafThick{
+	font-family: "quiverleaf-cf", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+.QuiverleafThickItalic{
+	font-family: "quiverleaf-cf", sans-serif;
+	font-weight: 800;
+	font-style: italic;
+}
+
+
+
+
+
+
+
+
+.ArticulatLight{
+	font-family: "articulat-cf", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.ArticulatItalic{
+	font-family: "articulat-cf", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.ArticulatReg{
+	font-family: "articulat-cf", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.ArticulatItalic{
+	font-family: "articulat-cf", sans-serif;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.ArticulatBold{
+	font-family: "articulat-cf", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.ArticulatBoldItalic{
+	font-family: "articulat-cf", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 767px){
+	.container{
+		width:87.5%; /* 280 pixels at a 320 pixel screen width (iPhone 3 / 4 / 5) */
+	}
+
+	body section{
+		padding-top: 60px;
+	}
+
+	.desktopLink{
+		display: none;
+	}
+
+	h1{
+		font-size: 9.803333333vw;
+		line-height: 12vw;
+		letter-spacing: .25vw;
+	}
+
+
+	h2{
+		font-size: 8.65vw;
+		line-height: 12vw;
+		letter-spacing: .25vw;
+	}
+
+	h3{
+		font-size: 4vw;
+		letter-spacing: .15vw;
+	}
+
+	p{
+		font-size: 3vw;
+		line-height: 5.5vw;
+		letter-spacing: .2vw;
+	}
+
+
+
+
+
+
+
+
+
+	.mainMenu{
+		width: calc(46.875% - 3px);
+		height: auto;
+		position: fixed;
+		right: 0;
+  		justify-content: center;
+  		align-items: center;
+		top: -70vw;
+		z-index: 4;
+		padding-top: 40px;
+		transition: top .5s;
+		border-width: 0 0 3px 3px;
+		border-style: solid;
+		border-color: #8a7a74;
+	}
+
+	.mobileLink{
+		padding-top: 15px;
+		padding-bottom: 20px;
+		transition: width none;
+	}
+
+	.mobileLink p{
+		margin-left: 6vw;
+		font-size: 4vw;
+		letter-spacing: 1vw;
+		margin-top: -5.5px;
+		transition: background-color 1.5s;
+		transition: font-size none;
+	}
+
+	.mobileDiamond{
+		width: 3vw;
+		height: 3vw;
+		margin-left: 6vw;
+		transform: rotate(45deg);
+		transition: background-color 1.5s;
+	}
+
+	.mobileLink:hover > .mobileDiamond{
+		background-color: #fff;
+		transition: background-color .75s;
+	}
+
+	.mobileLink:hover > p{
+		color: #fff;
+		transition: color .75s;
+	}
+
+	.userInfo{
+		margin-left: 22vw;
+		padding-bottom: 5vw;
+		margin-right: 6.25%;
+	}
+
+	.userIntro:hover > .mobileDiamond{
+		background-color: #faf0ca;
+		transition: background-color .75s;
+	}
+
+	.userIntro:hover > p{
+		color: #faf0ca;
+		transition: color .75s;
+	}
+
+	.userInfo p{
+		padding-top: 1.5vw;
+		font-size: 2.25vw;
+		letter-spacing: .2vw;
+	}
+
+
+
+
+
+
+
+
+
+	.navBar{
+		height: 35px;
+		width: 100vw;
+		padding-top: 5px;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 5;
+	}
+
+	.homeLogo{
+		width: 19.6429%;
+		height: 30px;
+		background-image: url(../images/homeLogoM.png);
+		background-size: auto 30px;
+		background-repeat: no-repeat;
+		background-position: left;
+		display: block;
+	}
+
+	.fauxHoverLogo{
+		height: 30px;
+		background-image: url(../images/homeLogoHoverM.png);
+		background-size: auto 30px;
+		background-repeat: no-repeat;
+		background-position: left;
+		transition: opacity 1.5s;
+		opacity: 0;
+	}
+
+	.homeLogo:hover > .fauxHoverLogo{
+		opacity: 1;
+		transition: opacity .75s;
+	}
+
+	.revealButton{
+		height: 30px;
+		width: 19.6429%;
+		margin-left: auto;
+	}
+
+	.linkText{
+		display: none;
+	}
+
+	.mobileExpander{
+		height: 30px;
+		width: 60%;
+		margin-left: auto;
+		background-image: url(../images/mobileExpander.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: right;
+		display: block;
+	}
+
+	.mobileHover{
+		height: 30px;
+		width: 100%;
+		background-image: url(../images/mobileExpanderHov.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: right;
+		transition: opacity 1.5s;
+		margin-left: auto;
+		opacity: 0;
+	}
+
+	.mobileExpander:hover > .mobileHover{
+		opacity: 1;
+		transition: opacity .75s;
+	}
+
+
+
+
+
+
+	.footer{
+		background-image: url(../images/footerBGM.jpg);
+		background-position: center bottom;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+
+	.footerTextHolder{
+		padding-top: 52vw;
+		padding-bottom: 18.75vw;
+	}
+
+	.footerTextHolder .flexParent h2{
+		margin-bottom: 26.5625vw;
+	}
+
+	.footerCol{
+		width: 19.6429%;
+		margin-bottom: 26.5625vw;
+	}
+
+	.footerCol1{
+		margin-right: 7.1429%;
+		margin-left: 53.5714%
+	}
+
+	.footerCol a{
+		font-size: 3vw;
+		line-height: 5.5vw;
+		letter-spacing: .2vw;
+		display: block;
+		margin-bottom: 18.75vw;
+	}
+
+	.upButton{
+		width: 19.6429%;
+		height: 10.9375vw;
+		display: block;
+		background-image: url(../images/upButtonM.png);
+		background-position: center center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+
+	.footerTextHolder .upButton{
+		margin-left: auto;
+	}
+
+
+
+
+
+	.smallSpark{
+		width: 10vw;
+		height: 10vw;
+		background-image: url(../images/smallSparkDarkBGM.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin-top: 9vw;
+	}
+
+	.darkerSpark{
+		background-image: url(../images/smallSparkLightBGM.png);
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* TABLET STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*@media only screen and (min-width: 768px) and (max-width: 1024px){
+	.container{
+		width:93.75%;*/ /* 720 pixels at a 768 pixel screen width (iPads) */
+/*	}
+}*/
+
+/* DESKTOP STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 768px){
+	.container{
+		/*width:978px of 1024px;*/
+		width:95.5%;
+	}
+
+	h1{
+		font-size: 3.9vw;
+		line-height: 12vw;
+		letter-spacing: .25vw;
+	}
+
+
+	h2{
+		font-size: 3.25vw;
+		line-height: 12vw;
+		letter-spacing: .2vw;
+	}
+
+	h3{
+		font-size: 1.74vw;
+		letter-spacing: .15vw;
+	}
+
+	p{
+		font-size: 1.25vw;
+		line-height: 2.5vw;
+		letter-spacing: .1vw;
+	}
+
+
+
+
+	body section, .hero{
+		padding-top: 4.8828125vw;
+	}
+
+	.navBar{
+		height: 4.8828125vw;
+		width: 100vw;
+		z-index: 10;
+		padding-top: 0.9765625005vw;
+		position: fixed;
+		left: 0;
+		top: 0;
+	}
+
+	.homeLogo{
+		width: 22.699387%;
+		height: 3.90625vw;
+		background-image: url(../images/homeLogoD.png);
+		background-size: auto 3.90625vw;
+		background-repeat: no-repeat;
+		background-position: left;
+		display: block;
+		/*margin-left: 8.588957%;*/
+	}
+
+	.fauxHoverLogo{
+		/*width: 100%;*/
+		height: 3.90625vw;
+		background-image: url(../images/homeLogoHoverD.png);
+		background-size: auto 3.90625vw;
+		background-repeat: no-repeat;
+		background-position: left;
+		transition: opacity 1.5s;
+		opacity: 0;
+	}
+
+	.homeLogo:hover > .fauxHoverLogo{
+		opacity: 1;
+		transition: opacity .75s;
+	}
+
+	.revealButton, .mobileExpander, .journalMenuLink, .printingMenuLink{
+		display: none;
+	}
+
+	.desktopLink{
+		width: 14.110429%;
+		margin-right: 3.067485%;
+		height: 3.90625vw;
+	}
+
+	.deskDiamond{
+		width: 1.3671875vw;
+		height: 1.3671875vw;
+		transform: rotate(45deg);
+		margin-top: 1.5625vw;
+		margin-right: auto;
+		transition: background-color 1.5s;
+		transition: margin-left 1.5s;
+	}
+
+	.userIntro .mobileDiamond{
+		width: 1.3671875vw;
+		height: 1.3671875vw;
+		transform: rotate(45deg);
+		margin-top: 1.5625vw;
+		margin-right: 1.5vw;
+	}
+
+	.desktopLink:hover > .deskDiamond{
+		background-color: #fff;
+		transition: background-color .75s;
+		transition: margin-left .75s;
+	}
+
+	.desktopLink p{
+		line-height: 3.90625vw;
+		font-size: 1.5vw;
+		transition: background-color 1.5s;
+		transition: letter-spacing 1.5s;
+		letter-spacing: .25vw;
+	}
+
+	.desktopLink:hover > p{
+		letter-spacing: .7vw;
+		color: #fff;
+		transition: background-color .75s;
+		transition: letter-spacing .75s;
+	}
+
+	.journalDeskLink{
+		margin-left: auto;
+	}
+
+	.deskMenuToggle{
+		/*margin-left: 3.067485%;*/
+		width: 5.521472%;
+		height: 3.90625vw;
+	}
+
+	.deskMenuToggle .deskDiamond{
+		width: 1.3671875vw;
+		height: 1.3671875vw;
+		transform: rotate(45deg);
+		transition: color 1.5s;
+		margin-left: 3.6vw;
+	}
+
+	.deskMenuToggle:hover > div{
+		background-color: #fff;
+		transition: color .75s;
+	}
+
+
+
+
+
+
+	.mainMenu{
+		padding-top: 5.859375vw;
+		position: fixed;
+		right: 0;
+		top: -25vw;
+		padding-bottom: 1.953125vw;
+		width: calc(15.72265625% - 5px);
+		transition: top .5s;
+		border-width: 0 0 5px 5px;
+		border-style: solid;
+		border-color: #8a7a74;
+		z-index: 9;
+	}
+
+	.userIntro{
+		margin-right: 14.2857%;
+		margin-left: 8%;
+	}
+
+	.userIntro p{
+		line-height: 3.90625vw;
+		font-size: 1.5vw;
+		letter-spacing: .25vw;
+	}
+
+	.userInfo{
+		margin-right: 14.2857%;
+		margin-left: 35%;
+	}
+
+	.userInfo p{
+		line-height: 3.90625vw;
+		padding-top: .5vw;
+		font-size: .875vw;
+		letter-spacing: 0.075vw;
+	}
+
+
+
+
+
+
+
+
+	.smallSpark{
+		width: 4.5vw;
+		height: 4.5vw;
+		background-image: url(../images/smallSparkDarkBGD.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin-top: 7.25vw;
+	}
+
+	.darkerSpark{
+		background-image: url(../images/smallSparkLightBGD.png);
+	}
+
+
+
+
+	.darkBrownBGDesk{
+		background-color: #513c3c;
+	}
+
+
+
+
+
+
+
+
+	.gridding{
+		position: fixed;
+		top: 4.8828125vw;
+		left: 2.24609375vw;
+		z-index: 3;
+		opacity: 50%;
+	}
+
+	.gridCol{
+		width: 5.521472%;
+		height: 6vw;
+		background-color: green;
+	}
+
+	.gridMarg{
+		width: 3.067485%;
+		height: 6vw;
+		background-color: red;
+	}
+
+
+
+
+
+
+
+	
+
+	.footer{
+		padding-top: 20vw;
+		padding-bottom: 10vw;
+		background-image: url(../images/footerBGD.jpg);
+		background-position: center bottom;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+
+	.footerTextHolder .flexParent h2{
+		margin-bottom: 15vw;
+		margin-left: 8.588957%;
+	}
+
+	.footerCol{
+		width: 22.699387%;
+		margin-bottom: 15vw;
+	}
+
+	.footerCol1{
+		margin-right: 3.067485%;
+		margin-left: 51.533742%
+	}
+
+	.footerCol a{
+		font-size: 1.25vw;
+		line-height: 2vw;
+		letter-spacing: .35vw;
+		display: block;
+		margin-bottom: 8.7890625vw;
+	}
+
+	.upButton{
+		width: 14.110429%;
+		height: 5vw;
+		display: block;
+		background-image: url(../images/upButtonD.png);
+		background-position: center center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+
+	.footerTextHolder .upButton{
+		margin-left: auto;
+	}
+
+
+
+
+
+
+
+}
